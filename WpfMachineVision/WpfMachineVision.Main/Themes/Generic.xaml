@@ -1,0 +1,17 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <!--Units-->
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/StopButton.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/PlayButton.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/ViewerButton.xaml"/>
+        
+        <!--Views-->
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/LeftPanelView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/RightPanelView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/CameraView.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

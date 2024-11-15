@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:based="clr-namespace:WpfMachineVision.Support.UI.Units;assembly=WpfMachineVision.Support"
+                    xmlns:views="clr-namespace:WpfMachineVision.Forms.UI.Views"
+                    xmlns:prism="http://prismlibrary.com/">
+
+    <Style TargetType="{x:Type views:MachineVisionView}" 
+           BasedOn="{StaticResource {x:Type based:DarkWindow}}">
+        <Setter Property="Content">
+            <Setter.Value>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftPanelRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="1" prism:RegionManager.RegionName="CameraRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="2" prism:RegionManager.RegionName="RightPanelRegion" Margin="1 1 1 1"/>
+                </Grid>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
