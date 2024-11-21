@@ -11,13 +11,18 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="3*"/>
-                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
 
-                    <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftPanelRegion" Margin="1 1 1 1"/>
-                    <ContentControl Grid.Column="1" prism:RegionManager.RegionName="CameraRegion" Margin="1 1 1 1"/>
-                    <ContentControl Grid.Column="2" prism:RegionManager.RegionName="RightPanelRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="0" Grid.RowSpan="2" prism:RegionManager.RegionName="NavigateRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="1" Grid.Row="0" prism:RegionManager.RegionName="ViewerRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="1" Grid.Row="1" prism:RegionManager.RegionName="OutputRegion" Margin="1 1 1 1"/>
+                    <ContentControl Grid.Column="2" Grid.RowSpan="2" prism:RegionManager.RegionName="ControlRegion" Margin="1 1 1 1"/>
                 </Grid>
             </Setter.Value>
         </Setter>

@@ -24,17 +24,21 @@ namespace WpfMachineVision.Forms.UI.Views
 
         private void MachineVisionView_Loaded(object sender, RoutedEventArgs e)
         {
-            LeftPanelView LeftPanelContent = _containerProvider.Resolve<LeftPanelView>();
-            IRegion LeftPanelRegion = _regionManager.Regions["LeftPanelRegion"];
-            LeftPanelRegion.Add(LeftPanelContent);
+            NavigationView NavigateContent = _containerProvider.Resolve<NavigationView>();
+            IRegion NavigateRegion = _regionManager.Regions["NavigateRegion"];
+            NavigateRegion.Add(NavigateContent);
 
-            RightPanelView RightPanelContent = _containerProvider.Resolve<RightPanelView>();
-            IRegion RightPanelRegion = _regionManager.Regions["RightPanelRegion"];
-            RightPanelRegion.Add(RightPanelContent);
+            ImageContentView ViewerContent = _containerProvider.Resolve<ImageContentView>();
+            IRegion ViewerRegion = _regionManager.Regions["ViewerRegion"];
+            ViewerRegion.Add(ViewerContent);
 
-            CameraView CameraContent = _containerProvider.Resolve<CameraView>();
-            IRegion CameraRegion = _regionManager.Regions["CameraRegion"];
-            CameraRegion.Add(CameraContent);
+            //ImageContentView ViewerContent = _containerProvider.Resolve<ImageContentView>();
+            //IRegion ViewerRegion = _regionManager.Regions["OutputRegion"];
+            //ViewerRegion.Add(ViewerContent);
+
+            ImageControlView ControlContent = _containerProvider.Resolve<ImageControlView>();
+            IRegion ControlRegion = _regionManager.Regions["ControlRegion"];
+            ControlRegion.Add(ControlContent);
         }
     }
 }

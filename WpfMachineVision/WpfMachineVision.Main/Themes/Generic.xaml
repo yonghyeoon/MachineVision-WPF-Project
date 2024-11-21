@@ -4,14 +4,18 @@
 
     <ResourceDictionary.MergedDictionaries>
         <!--Units-->
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/CameraButton.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/ImageButton.xaml"/>
         <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/StopButton.xaml"/>
         <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/PlayButton.xaml"/>
         <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Units/ViewerButton.xaml"/>
-        
-        <!--Views-->
-        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/LeftPanelView.xaml"/>
-        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/RightPanelView.xaml"/>
-        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/CameraView.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
 
+        <!--Views-->
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/NavigationView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/CameraControlView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/CameraContentView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/ImageControlView.xaml"/>
+        <ResourceDictionary Source="/WpfMachineVision.Main;component/Themes/Views/ImageContentView.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
 </ResourceDictionary>

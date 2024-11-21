@@ -5,6 +5,12 @@
     <Page Update="Themes\Generic.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Units\CameraButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Units\ImageButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\Units\StopButton.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -14,13 +20,19 @@
     <Page Update="Themes\Units\ViewerButton.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Views\CameraView.xaml">
+    <Page Update="Themes\Views\CameraControlView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Views\LeftPanelView.xaml">
+    <Page Update="Themes\Views\ImageControlView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Views\RightPanelView.xaml">
+    <Page Update="Themes\Views\NavigationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Views\CameraContentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Views\ImageContentView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
