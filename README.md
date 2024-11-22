@@ -5,3 +5,5 @@ It is based on the nuget packages of Prism and Commnunity.Toolkit.Mvvm and OpenC
 
 This is a program that allows you to apply Gray Image, Canny, or OCR functions to selected images or real-time camera screens.
 The UI used DarkStyle using CustomControl.
+
+<img src='WpfMachineVision/WpfMachineVision.Support/Local/Images/ImageProgram.png'></a>
